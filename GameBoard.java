@@ -3,7 +3,10 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
+//abstract class for components 
+abstract class paintComponents{
 
+}
 // the top level class gameBoard extending the Jpanel
 public class GameBoard extends JPanel {    
     int xcells = 30   // variable or properties declared 
