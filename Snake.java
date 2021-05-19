@@ -1,16 +1,37 @@
-/**
- * Write a description of class Snake here.
- *
- * @author (your name)
- * @version (a version number or a date)
+/*
+ Code adapted from: https://zetcode.com/javagames/snake/
  */
-public class Snake
-{
-    /**
-     * Constructor for objects of class Snake
-     */
-    public Snake() {
-        // initialise instance variables        
-    }
+import java.awt.EventQueue;
+import javax.swing.JFrame;
 
+public class Snake extends JFrame {
+
+    public Snake() {
+        
+        initUI();
+    }
+    
+    private void initUI() {
+        
+        add(new Board());
+               
+        setResizable(false);
+        pack();
+        
+        setTitle("Snake");
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    
+
+        public static void main(String[] args) {
+        
+        EventQueue.invokeLater(() -> {
+            JFrame ex = new Snake();
+            ex.setVisible(true);
+        });
+    }
+    
+    
+    
 }
